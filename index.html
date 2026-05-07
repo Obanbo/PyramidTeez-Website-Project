@@ -8,9 +8,170 @@
       content="Pyramid Teez creates premium custom apparel, restaurant flyers, and bold brand visuals with black and gold style."
     />
     <title>Pyramid Teez | Premium Custom Apparel & Flyers</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="page-bg"></div>
+    <div class="grid-bg"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="Pyramid Teez home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>
+            <span class="brand-primary">Pyramid</span>
+            <span class="brand-secondary">Teez</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#apparel">Apparel</a>
+          <a href="#flyers">Flyers</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#contact" class="btn btn-gold nav-cta">Start Order</a>
+        <a href="#contact" class="menu-button" aria-label="Skip to contact">☰</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">★ Premium black & gold custom design studio</p>
+          <h1>Custom tees and restaurant flyers made to look expensive.</h1>
+          <p class="hero-text">
+            Pyramid Teez turns bold ideas into polished apparel, menus, promo flyers,
+            and launch visuals with a luxury streetwear finish.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-gold">Request a Quote →</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+          </div>
+          <div class="stats" aria-label="Business highlights">
+            <div><strong>48hr</strong><span>concept starts</span></div>
+            <div><strong>100%</strong><span>print-ready focus</span></div>
+            <div><strong>Gold</strong><span>standard finish</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Pyramid Teez featured merch artwork">
+          <div class="card-shell">
+            <div class="card-inner">
+              <div class="card-top"><span>New Drop</span><span>✓</span></div>
+              <div class="pyramid-wrap"><div class="pyramid"></div></div>
+              <div>
+                <p class="mini-label">Pyramid Teez</p>
+                <h2>Gold Standard Merch</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="band">
+        <div class="container about-grid">
+          <div>
+            <p class="section-kicker">About Pyramid Teez</p>
+            <h2 class="section-title">Built for brands that want more than basic.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Pyramid Teez blends streetwear energy, luxury color palettes, and clean
+              marketing design to help small businesses and creators launch visuals
+              that feel premium from the first impression.
+            </p>
+            <div class="pill-grid">
+              <span>Fast concepts</span>
+              <span>Sharp detail</span>
+              <span>Print-ready files</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <div class="section-intro">
+          <p class="section-kicker centered">Services</p>
+          <h2 class="section-title">Everything you need for a polished launch.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span>👕</span><h3>Custom Apparel</h3><p>Premium tees, hoodies, staff uniforms, event shirts, and statement pieces with crisp custom artwork.</p></article>
+          <article class="service-card"><span>🍽️</span><h3>Restaurant Flyers</h3><p>High-impact menus, food promos, grand opening flyers, and social graphics that make customers hungry.</p></article>
+          <article class="service-card"><span>🎨</span><h3>Brand Design</h3><p>Polished logo placement, color direction, typography, and campaign visuals for a luxury streetwear feel.</p></article>
+          <article class="service-card"><span>🖨️</span><h3>Print-Ready Production</h3><p>Clean layouts prepared for apparel printing, digital promotion, and fast local marketing launches.</p></article>
+        </div>
+      </section>
+
+      <section id="apparel" class="showcase">
+        <div class="container">
+          <div class="showcase-head">
+            <div>
+              <p class="section-kicker">Custom Apparel Showcase</p>
+              <h2 class="section-title">Merch that feels exclusive before it sells out.</h2>
+            </div>
+            <span class="delivery-badge">🚚 Designed to move fast</span>
+          </div>
+          <div class="showcase-grid">
+            <article class="showcase-card"><span>01</span><div>👕</div><p>Pyramid Teez</p><h3>Signature Gold Pyramid Tee</h3></article>
+            <article class="showcase-card"><span>02</span><div>👕</div><p>Pyramid Teez</p><h3>Luxury Staff Uniform Set</h3></article>
+            <article class="showcase-card"><span>03</span><div>👕</div><p>Pyramid Teez</p><h3>Event Drop Hoodie</h3></article>
+            <article class="showcase-card"><span>04</span><div>👕</div><p>Pyramid Teez</p><h3>Bold Brand Merch Pack</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="flyers" class="showcase showcase-alt">
+        <div class="container">
+          <div class="showcase-head">
+            <div>
+              <p class="section-kicker">Restaurant Flyer Showcase</p>
+              <h2 class="section-title">Food promos with scroll-stopping flavor.</h2>
+            </div>
+            <span class="delivery-badge">🚚 Designed to move fast</span>
+          </div>
+          <div class="showcase-grid">
+            <article class="showcase-card"><span>01</span><div>🍽️</div><p>Pyramid Teez</p><h3>Weekend Wings Special</h3></article>
+            <article class="showcase-card"><span>02</span><div>🍽️</div><p>Pyramid Teez</p><h3>Grand Opening Promo</h3></article>
+            <article class="showcase-card"><span>03</span><div>🍽️</div><p>Pyramid Teez</p><h3>Brunch Menu Feature</h3></article>
+            <article class="showcase-card"><span>04</span><div>🍽️</div><p>Pyramid Teez</p><h3>Late Night Food Deal</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Ready to build your next premium look?</h2>
+            <p>Send your idea, business name, colors, deadline, and quantity. Pyramid Teez will help shape it into a clean design package.</p>
+            <div class="contact-links">
+              <a href="tel:+10000000000">☎ Call or text for custom orders</a>
+              <a href="mailto:hello@pyramidteez.com">✉ hello@pyramidteez.com</a>
+              <a href="#home">⌖ Serving local brands, restaurants, and events</a>
+              <a href="#home">◎ Follow the latest drops and flyers</a>
+            </div>
+          </div>
+          <form class="quote-form">
+            <label>Name<input type="text" placeholder="Your name" /></label>
+            <label>Business<input type="text" placeholder="Brand or restaurant" /></label>
+            <label>Email<input type="email" placeholder="you@example.com" /></label>
+            <label>Project Type<input type="text" placeholder="Custom tees, flyer, branding..." /></label>
+            <label class="full">Project Details<textarea placeholder="Tell us what you need designed."></textarea></label>
+            <button type="button" class="btn btn-gold full">Request Design Quote ✨</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2026 Pyramid Teez. Premium apparel, flyers, and visual branding.</footer>
+
+    <a
+      href="https://wa.me/10000000000?text=Hi%20Pyramid%20Teez%2C%20I%20need%20a%20custom%20design."
+      class="whatsapp"
+      aria-label="Message Pyramid Teez on WhatsApp"
+    >💬 <span>WhatsApp</span></a>
   </body>
 </html>

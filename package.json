@@ -4,18 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev": "python3 -m http.server 5173 --bind 0.0.0.0",
+    "build": "node scripts/validate-site.mjs",
+    "preview": "python3 -m http.server 4173 --bind 0.0.0.0"
   },
-  "dependencies": {
-    "react": "latest",
-    "react-dom": "latest"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "latest",
-    "@vitejs/plugin-react": "latest",
-    "tailwindcss": "latest",
-    "vite": "latest"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
